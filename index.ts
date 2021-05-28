@@ -1,7 +1,7 @@
 import restaurants from './restaurants';
 
 const dollarSigns = '$$';
-const deliveryTimeMax = '90';
+const deliveryTimeMax = 90;
 const maxDistance = 10;
 let result;
 
