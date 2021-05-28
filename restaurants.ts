@@ -1,6 +1,6 @@
 export default [
   {
-    name: 'Silver Rice Sushi ',
+    name: 'Silver Rice Sushi',
     priceBracket: '2',
     deliveryTimeMinutes: 40,
     openHour: '12',
@@ -8,7 +8,7 @@ export default [
     distance: '5',
   },
   {
-    name: 'Nikko\'s Rotisserie Chicken ',
+    name: 'Nikko\'s Rotisserie Chicken',
     priceBracket: '1',
     deliveryTimeMinutes: 20,
     openHour: '12',
@@ -16,7 +16,7 @@ export default [
     distance: '8',
   },
   {
-    name: 'Aita Trattoria ',
+    name: 'Aita Trattoria',
     priceBracket: '3',
     deliveryTimeMinutes: 60,
     openHour: '18',
@@ -24,7 +24,7 @@ export default [
     distance: '1',
   },
   {
-    name: 'Lula Bagel ',
+    name: 'Lula Bagel',
     priceBracket: '1',
     deliveryTimeMinutes: 20,
     openHour: '0',
@@ -32,7 +32,7 @@ export default [
     distance: '2',
   },
   {
-    name: 'Golden Chopstick ',
+    name: 'Golden Chopstick',
     priceBracket: '1',
     deliveryTimeMinutes: 20,
     openHour: '15',
