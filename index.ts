@@ -21,6 +21,10 @@ const filteredRestaurants = restaurants.filter((restaurant) => {
     return false;
   }
 
+  if (hour < Number(restaurant.openHour) || hour > Number(restaurant.closeHour)) {
+    return false;
+  }
+
   return restaurant;
 });
 

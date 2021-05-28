@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const restaurants_1 = require("./restaurants");
+const hour = new Date().getHours();
 const dollarSigns = '$$';
 const deliveryTimeMax = 90;
 const maxDistance = 10;
@@ -14,6 +15,9 @@ const filteredRestaurants = restaurants_1.default.filter((restaurant) => {
         return false;
     }
     if (Number(restaurant.distance) > maxDistance) {
+        return false;
+    }
+    if (hour < Number(restaurant.openHour) || hour > Number(restaurant.closeHour)) {
         return false;
     }
     return restaurant;
