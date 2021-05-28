@@ -3,7 +3,7 @@ import restaurants from './restaurants';
 const dollarSigns = '$$';
 const deliveryTimeMax = 90;
 const maxDistance = 10;
-let result;
+let result: string;
 
 const priceBracket: number = dollarSigns.length;
 
