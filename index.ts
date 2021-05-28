@@ -16,7 +16,7 @@ const filteredRestaurants = restaurants.filter((restaurant) => {
     return false;
   }
 
-  if (restaurant.distance > maxDistance) {
+  if (Number(restaurant.distance) > maxDistance) {
     return false;
   }
 
