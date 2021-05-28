@@ -7,7 +7,7 @@ const maxDistance = 10;
 let result;
 const priceBracket = dollarSigns.length;
 const filteredRestaurants = restaurants_1.default.filter((restaurant) => {
-    if (restaurant.priceBracket > priceBracket) {
+    if (Number(restaurant.priceBracket) > priceBracket) {
         return false;
     }
     if (restaurant.deliveryTimeMinutes > deliveryTimeMax) {
