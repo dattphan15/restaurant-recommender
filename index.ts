@@ -1,4 +1,5 @@
-import restaurants from './restaurants';
+import { restaurants, Restaurant } from "./restaurants";
+import { orders, Order, PriceBracket } from "./orders";
 
 const hour: number = new Date().getHours();
 const dollarSigns = '$$';
@@ -35,3 +36,13 @@ if (filteredRestaurants.length === 0) {
 }
 
 console.log(result);
+
+/// Add your getMaxPrice() function below:
+
+/// Add your getOrders() function below:
+
+/// Add your printOrders() function below:
+
+/// Main
+// const elligibleOrders = getOrders(PriceBracket.Low, orders);
+// printOrders(restaurants, elligibleOrders);
