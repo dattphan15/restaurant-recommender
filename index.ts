@@ -64,5 +64,8 @@ function getOrders(price: PriceBracket, orders: Order[][]) {
 /// Add your printOrders() function below:
 
 /// Main
+const elligibleOrders = getOrders(PriceBracket.Low, orders);
+console.log(elligibleOrders);
+
 // const elligibleOrders = getOrders(PriceBracket.Low, orders);
 // printOrders(restaurants, elligibleOrders);
