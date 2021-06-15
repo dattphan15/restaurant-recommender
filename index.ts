@@ -62,10 +62,18 @@ function getOrders(price: PriceBracket, orders: Order[][]) {
 }
 
 /// Add your printOrders() function below:
+function printOrders(restaurants: Restaurant[], orders: Order[][]) {
+  
+  restaurants.forEach((restaurant: Restaurant, index: number) => {
+    if (orders[index].length > 0) {
+    console.log(restaurant.name);
+    orders[index].forEach((order) => {
+      console.log(` - ${order.name}: $${order.price}`);
+    });
+    }
+  });
+}
 
 /// Main
 const elligibleOrders = getOrders(PriceBracket.Low, orders);
-console.log(elligibleOrders);
-
-// const elligibleOrders = getOrders(PriceBracket.Low, orders);
-// printOrders(restaurants, elligibleOrders);
+printOrders(restaurants, elligibleOrders);
